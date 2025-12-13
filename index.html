@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- aside -->
+        <aside>
+            <h4 class="animate__animated animate__fadeInDown animate__slow">FLEESO</h4>
+            <h1 class="animate__animated animate__fadeInDown animate__slow">Start your journey with us.</h1>
+            <p>Discover the world's best community of freelancers and businss owners.</p>
+            <div class="card">
+                <p>Simply unbelievable! I am really satisfied with my pojects and business. This is absolutely wonderul!
+                </p><img src="./images/doll.jpeg" alt="doll">
+                <h2>Dora<span>Freelancer</span></h2>
+            </div>
+            <div id="circle"><span></span><span></span><span></span></div>
+        </aside>
+        <!-- form -->
+        <form>
+            <h1 class="animate__animated animate__fadeInDown animate__slow">Sign up</h1>
+            <p>Have an account? <a href="./login.html">Sign in</a></p>
+            <p id="para">Looking for?</p>
+            <label class="radio"><input type="radio" name="category" value="project"
+                    required><span>Projects</span></label>
+            <label class="radio"><input type="radio" name="category" value="designs"
+                    required><span>Designs</span></label>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="Enter Password" maxlength="8" required>
+            <label>Select Skills(optional)</label><select name="skills" id="opt">
+                <option value="">Type to search..</option>
+                <option value="Web & App Development">Web & App Development</option>
+                <option value="Graphics">Graphics</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+            </select>
+            <button class="animate__animated animate__pulse animate__infinite" type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+
+</html>
